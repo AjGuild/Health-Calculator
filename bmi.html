@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BMI Calculator</h1>
+    <div class="calculator-container">
+      <h2>Calculate Your BMI</h2>
+      <form id="bmiForm">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" required>
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" required>
+        <button type="submit">Calculate</button>
+      </form>
+      <p id="bmiResult"></p>
+    </div>
+    <div class="description">
+      <h3>What is BMI?</h3>
+      <p>
+        Body Mass Index (BMI) is a measure of body fat based on your weight and height. It is commonly used to categorize individuals as underweight, normal weight, overweight, or obese.
+      </p>
+    </div>
+  </div>
+  <script>
+    document.getElementById('bmiForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const weight = parseFloat(document.getElementById('weight').value);
+      const height = parseFloat(document.getElementById('height').value) / 100;
+      const bmi = (weight / (height * height)).toFixed(2);
+      document.getElementById('bmiResult').innerText = `Your BMI is: ${bmi}`;
+    });
+  </script>
+</body>
+</html>

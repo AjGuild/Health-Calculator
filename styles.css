@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+  }
+  
+  .card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1em;
+    margin: 0;
+  }
+  
+  /* Calculator Page Styles */
+  .calculator-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .calculator-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .calculator-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .calculator-container label {
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+  .calculator-container input, .calculator-container select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .calculator-container button {
+    padding: 10px;
+    background: #1e3c72;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .calculator-container button:hover {
+    background: #2a5298;
+  }
+  
+  .calculator-container p {
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  
+  .description {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  .description h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .description p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
